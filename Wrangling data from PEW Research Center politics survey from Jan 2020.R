@@ -69,6 +69,7 @@ new_df <- dummy_cols(new_df)
 pew_politics_jan_2020 <- new_df
 
 
+<<<<<<< HEAD
 #manipulate data set to support instruction around analyzing nested data. Specifically, here I artificially increase the 
 # clustering and confederacy effects by recoding republican to "1" if respondent is in an ex-confederate state for a subset of
 # the sample (the first 500 rows).
@@ -80,6 +81,8 @@ pew_politics_jan_2020$Number <- seq(1, 1504, 1)
 pew_politics_jan_2020$republican[pew_politics_jan_2020$Number <= 15833 & pew_politics_jan_2020$confederate == 1] <- 1
 
 
+=======
+>>>>>>> b35a8676eb9f4b10442672de17c446249b36d979
 #write csv to folder that will be upload to gitHub
 write.csv(pew_politics_jan_2020, "~/R/pew-politics-jan2020/dataset.csv")
 
